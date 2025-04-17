@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="IT Library - Your one-stop resource for all things IT, including programming, networking, cybersecurity, and data science."
+    />
+    <title>IT Library</title>
+    <link rel="stylesheet" href="../StyleSheets/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <!-- Cloud Icons -->
+    <link rel="icon" href="../images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../StyleSheets/chat-widget.css" />
+  </head>
+  <body>
+    <header>
+      <h1>IT Library</h1>
+    </header>
+
+    <!--This is the main content of the Homepage-->
+    <main>
+      <section id="home">
+        <h2>Welcome to the IT Library</h2>
+        <p>Your one-stop resource for all things IT.</p>
+      </section>
+
+      <!--This is the section for the Lsit of available Subjects-->
+      <section id="subjects">
+        <h2>Available Subjects</h2>
+        <ul class="subject-list">
+          <li><a href="programming.html">Programming</a></li>
+          <li><a href="networking.html">Networking</a></li>
+          <li><a href="web-development.html">Web Development</a></li>
+          <li><a href="app-development.html">App Development</a></li>
+          <!-- For the Video viewing -->
+          <!-- For the Game Page -->
+        </ul>
+      </section>
+
+      <!-- For Extra Resources of the site 
+            Example:
+              Videos
+              Articles
+              Tutorials
+              etc.
+        -->
+
+      <section id="resources">
+        <h2>Ownership</h2>
+        <p>Property of Natsuki and Developed by Natsuki.</p>
+      </section>
+
+      <!--This is the section for the Contact Us-->
+      <section id="contacts">
+        <h2>Contact Us</h2>
+        <p>If you have any questions, feel free to reach out!</p>
+        <div class="social-icons">
+          <a
+            href="https://www.facebook.com/Natsuki303"
+            target="_blank"
+            class="social-icon"
+            aria-label="Facebook"
+            title="Visit our Facebook page"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a
+            href="https://x.com/HoutarouNatsuki"
+            target="_blank"
+            class="social-icon"
+            aria-label="Twitter"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <a
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=natsuki3003@gmail.com"
+            target="_blank"
+            class="social-icon"
+            aria-label="Email"
+            ><i class="fas fa-envelope"></i
+          ></a>
+          <!-- Customer Support Icon -->
+          <a
+            href="#"
+            class="social-icon"
+            aria-label="Customer Support"
+            title="Contact Customer Support"
+            id="support-chat-button"
+            ><i class="fas fa-headset"></i
+          ></a>
+        </div>
+      </section>
+
+      <!-- Chat Widget -->
+      <div id="support-chat-widget" class="chat-widget hidden">
+        <div class="chat-header">
+          <h3>Support Chat</h3>
+          <button id="close-chat" aria-label="Close Chat">&times;</button>
+        </div>
+        <div class="chat-body">
+          <p>Welcome! How can we assist you today?</p>
+          <!-- Chat messages will appear here -->
+        </div>
+        <div class="chat-footer">
+          <input
+            type="text"
+            id="chat-input"
+            placeholder="Type your message..."
+            aria-label="Type your message"
+          />
+          <button id="send-message">Send</button>
+        </div>
+      </div>
+    </main>
+  </body>
+  <footer>
+    <p>&copy; <span id="year"></span> IT Library. All rights reserved.</p>
+    <script src="../Scripts/year.js"></script>
+    <script src="../Scripts/chat-widget.js"></script>
+    <!-- Fix this  -->
+  </footer>
+</html>
