@@ -1,0 +1,267 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #333;
+  color: white;
+}
+
+header {
+  background-color: #444;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: #555;
+  color: white;
+}
+
+main {
+  padding: 20px;
+}
+
+h2 {
+  color: #fff;
+}
+
+.subject-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.subject-list li {
+  display: inline-block;
+  background-color: #555;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 20px;
+  margin: 5px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.subject-list li:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 12px #000000;
+}
+
+.subject-list a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.subject-list a:hover {
+  text-decoration: underline;
+  color: #fff;
+}
+
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icon {
+  color: white;
+  text-decoration: none;
+  font-size: 24px;
+  margin: 0 10px;
+  transition: color 0.3s;
+}
+
+.social-icon:hover {
+  color: #444;
+}
+
+footer {
+  background-color: #444;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.language-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.language-item {
+  border: 1px solid #444;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 0;
+  background-color: #333;
+  transition: background-color 0.3s;
+}
+
+.language-item:hover {
+  background-color: #555;
+}
+
+.language-item.active {
+  background-color: gray;
+}
+
+.download-list a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.download-list a:hover {
+  color: #ddd;
+  text-decoration: underline;
+}
+
+.download-list {
+  display: none;
+  margin-left: 20px;
+}
+
+.language-item:hover .download-list {
+  display: block;
+}
+
+.language-item span:contains("Java") + .download-list img {
+  width: 16px; /* Adjust the size as needed */
+  height: auto;
+}
+
+.Lesson-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.Lesson-item {
+  border: 1px solid #444;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 0;
+  background-color: #333;
+  transition: background-color 0.3s;
+}
+
+.Lesson-item:hover {
+  background-color: #555;
+}
+
+.download-list a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.download-list a:hover {
+  color: #ddd;
+  text-decoration: underline;
+}
+
+.download-list {
+  display: none;
+  margin-left: 20px;
+}
+
+.Lesson-item:hover .download-list {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 95%;
+  }
+  .subject-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .social-icons {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+  position: relative;
+  margin: 10% auto;
+  padding: 20px;
+  width: 80%;
+  background: #fff;
+  border-radius: 8px;
+}
+
+.modal-content iframe {
+  width: 100%;
+  height: 500px;
+}
+
+.icon {
+  width: 20px;
+  height: auto;
+}
+
+#search-bar {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px 15px;
+  margin: 20px 0;
+  font-size: 16px;
+  border: 2px solid #444;
+  border-radius: 25px;
+  background-color: #333;
+  color: #fff;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  display: block;
+}
+
+#search-bar:focus {
+  border-color: gray;
+  box-shadow: 0 0 10px #000000;
+  outline: none;
+}
+
+#search-bar::placeholder {
+  color: #aaa;
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .subject-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .social-icons {
+    display: flex;
+    justify-content: center;
+  }
+}
